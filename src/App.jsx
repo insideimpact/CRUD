@@ -7,13 +7,16 @@ import Home from './components/Home';
 
 function App() {
   return (
-      <div className="main">
-        <h2 className="main-header">React Crud Operations</h2>
-
-        <Link to="/">Home</Link>
-        <Link to="/Create">Create</Link>
-        <Link to="/Read">Read</Link>
-
+    <body className='body'>
+      <header className='headstyle' align='center'> 
+        <ul className='headul'>
+          <li className='headli'><Link to="/" className='linkstyle'>Home</Link></li>
+          <li className='headli'><Link to="/Create" className='linkstyle'>Create</Link></li>
+          <li className='headli'><Link to="/Read" className='linkstyle'>Read</Link></li>
+        </ul>
+      </header>
+        <div className="main">
+          <h2 className="main-header">React Crud Operations</h2>
         <div>
           <Routes>
             <Route path="/" element={<Home />}/>
@@ -23,7 +26,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    
+    </body>
   );
 }
 

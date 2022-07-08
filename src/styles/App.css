@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #212121;
+  background-color: rgb(44, 43, 43);
   color: whitesmoke;
   flex-direction: column;
 }
@@ -14,10 +14,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.create-form label{
-  color: whitesmoke !important;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px !important;
+.create-form {
+  padding:  20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #ccc;
 }
 
 .TableHeader {
@@ -26,4 +26,43 @@
 
 .TableBody {
   background-color:rgb(126, 116, 116);
+}
+
+.formtitle {
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.name_label { 
+  color: #a09b9b;
+  margin: 0 0 0 7px;
+  transition: 0.3ms;
+}
+
+.headstyle {
+  background: linear-gradient(#3f3f3f, rgb(44, 43, 43));
+  height: 40px;
+}
+
+.body {
+  background-color: rgb(44, 43, 43);
+  height: 80vh;
+  width: 100%;
+}
+
+.headli {
+  padding: 30px;
+  display: inline;
+}
+
+.headul {
+  display: inline;
+}
+
+.linkstyle {
+  text-decoration: none;
+  font-size: 20px;
+  color: #a09b9b;
 }

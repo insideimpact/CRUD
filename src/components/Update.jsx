@@ -25,17 +25,20 @@ export default function Update() {
         })
     }
 
-
     return (
         <div>
             <Form className="create-form">
                 <Form.Field>
-                    <label>First Name</label>
-                    <input placeholder='First Name' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+                    <label className='name_label'>First Name</label>
+                        <div>
+                            <input className='name_input' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+                        </div>
                 </Form.Field>
                 <Form.Field>
-                    <label>Last Name</label>
-                    <input placeholder='Last Name' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+                    <label className='name_label'>Last Name</label>
+                        <div>
+                            <input className='name_input' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+                        </div>
                 </Form.Field>
                 <Form.Field>
                     <Checkbox label='I agree to the Terms and Conditions' checked={checkbox} onChange={(e) => setCheckbox(!checkbox)}/>
